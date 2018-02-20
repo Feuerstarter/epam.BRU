@@ -15,7 +15,11 @@ public class Task2_0 {
         int p = Integer.parseInt(args[1]);
         double m1 = Double.parseDouble(args[2]);
         double m2 = Double.parseDouble(args[3]);
-        double G = 4 * Math.pow(java.lang.Math.PI, 2) * (Math.pow(a, 3) / (Math.pow(p, 2) * (m1 + m2)));
-        System.out.println(G);
+        if (m1 == 0 & m2 == 0) {
+            System.out.println("Error: m1 and m2 can't hold a value of zero at the same time. Try again.");
+        } else {
+            double G = 4 * Math.pow(java.lang.Math.PI, 2) * (Math.pow(a, 3) / (Math.pow(p, 2) * (m1 + m2)));
+            System.out.println(G);
+        }
     }
 }
